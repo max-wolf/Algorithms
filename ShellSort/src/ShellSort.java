@@ -3,17 +3,17 @@ import java.util.Arrays;
 
 public class ShellSort {
     public static void main(String[] args) {
-        int[] array = {49,38,65,97,76,13,27,49};
-        shellsort1(array);
-        System.out.println(Arrays.toString(array));
+        int[] arr = {49,38,65,97,76,13,27,49};
+        int[] arr2 = arr;
+        int[] arr3 = arr;
+        shellsort1(arr);
+        System.out.println(Arrays.toString(arr));
 
-        int[] array2 = {49,38,65,97,76,13,27,49};
-        shellsort2(array2);
-        System.out.println(Arrays.toString(array2));
+        shellsort2(arr2);
+        System.out.println(Arrays.toString(arr2));
 
-        int[] array3 = {49,38,65,97,76,13,27,49};
-        shellsort3(array3);
-        System.out.println(Arrays.toString(array3));
+        shellsort3(arr3);
+        System.out.println(Arrays.toString(arr3));
 
     }
 
