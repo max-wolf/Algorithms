@@ -1,6 +1,12 @@
 /bin/
 *.class
 
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
 # Package Files #
 *.jar
 *.war
