@@ -1,23 +1,13 @@
 package org.ptkl.linkedlist.addtwonum;
 
-import junit.framework.TestCase;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SolutionTest {
 
+    Logger logger = LoggerFactory.getLogger(SolutionTest.class);
     Solution solution = new Solution();
-
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
 
     @Test
     public void testAddTwoNumbers() {
@@ -37,7 +27,7 @@ public class SolutionTest {
 
         ListNode res = solution.addTwoNumbers(l1, l2);
         while(res != null) {
-            System.out.println(res.val);
+            logger.info("{}",res.val);
             res = res.next;
         }
     }
@@ -49,7 +39,7 @@ public class SolutionTest {
         ListNode l2 = new ListNode(5);
         ListNode res = solution.addTwoNumbers(l1, l2);
         while(res != null) {
-            System.out.println(res.val);
+            logger.info("{}",res.val);
             res = res.next;
         }
     }

@@ -1,31 +1,21 @@
 package org.ptkl.hashmap.foursum2;
 
-import junit.framework.TestCase;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SolutionTest {
 
-    Solution solution = null;
-
-    @Before
-    public void setUp() throws Exception {
-        solution = new Solution();
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
+    Logger logger = LoggerFactory.getLogger(SolutionTest.class);
+    Solution solution = new Solution();
 
     @Test
-    public void testFourSumCount() {
+    void fourSumCount() {
         int[] A = {1,2};
         int[] B = {-2,-1};
         int[] C = {-1,2};
         int[] D = {0, 2};
-        System.out.println(solution.fourSumCount(A,B,C,D));
+        int res = solution.fourSumCount(A,B,C,D);
+        logger.info("result is {}",res);
     }
 }
