@@ -1,4 +1,4 @@
-package org.ptkl.tree.bst.bstiterator;
+package org.ptkl.tree.bst.iterator;
 
 import java.util.Stack;
 
@@ -34,17 +34,20 @@ public class BSTIterator {
     public int next() {
         TreeNode t = stack.pop();
         int res = t.val;
-        TreeNode p = t.right;
         if (t.right != null) {
-
+            TreeNode p = t.right;
+            while (p != null) {
+                stack.push(p);
+                p = p.left;
+            }
         }
-        return 0;
+        return res;
     }
 
     /**
      * @return whether we have a next smallest number
      */
     public boolean hasNext() {
-        return false;
+        return !stack.isEmpty();
     }
 }
