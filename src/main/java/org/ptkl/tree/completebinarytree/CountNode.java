@@ -44,7 +44,7 @@ public class CountNode {
     }
 
     /**
-     *
+     * 计算高度，仅适用于完全二叉树和满二叉树
      * @param root
      * @return
      */
