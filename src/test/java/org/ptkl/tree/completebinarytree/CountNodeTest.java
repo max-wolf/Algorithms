@@ -1,18 +1,16 @@
 package org.ptkl.tree.completebinarytree;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class CountNodeTest {
 
     CountNode countNode = new CountNode();
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
     }
 
