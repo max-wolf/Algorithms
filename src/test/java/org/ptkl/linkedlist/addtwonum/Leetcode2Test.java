@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class SolutionTest {
+public class Leetcode2Test {
 
-    Logger logger = LoggerFactory.getLogger(SolutionTest.class);
-    Solution solution = new Solution();
+    Logger logger = LoggerFactory.getLogger(this.getClass());
+    Leetcode2 leetcode2 = new Leetcode2();
 
     @Test
     public void testAddTwoNumbers() {
@@ -25,7 +25,7 @@ public class SolutionTest {
         h2 = h2.next;
         h2.next = new ListNode(9);
 
-        ListNode res = solution.addTwoNumbers(l1, l2);
+        ListNode res = leetcode2.addTwoNumbers(l1, l2);
         while(res != null) {
             logger.info("{}",res.val);
             res = res.next;
@@ -37,7 +37,7 @@ public class SolutionTest {
     public void test5Add5() {
         ListNode l1 = new ListNode(5);
         ListNode l2 = new ListNode(5);
-        ListNode res = solution.addTwoNumbers(l1, l2);
+        ListNode res = leetcode2.addTwoNumbers(l1, l2);
         while(res != null) {
             logger.info("{}",res.val);
             res = res.next;

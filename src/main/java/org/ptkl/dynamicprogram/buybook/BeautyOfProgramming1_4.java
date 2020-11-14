@@ -1,18 +1,15 @@
 package org.ptkl.dynamicprogram.buybook;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.DoubleSummaryStatistics;
-import java.util.List;
 
 /*
-编程之美 买书问题
+编程之美 1.4 买书问题
  */
-public class Solution {
+public class BeautyOfProgramming1_4 {
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.fun(2, 2, 2, 1, 1));
+        BeautyOfProgramming1_4 beautyOfProgramming14 = new BeautyOfProgramming1_4();
+        System.out.println(beautyOfProgramming14.fun(2, 2, 2, 1, 1));
     }
 
     public double fun(int... args) {

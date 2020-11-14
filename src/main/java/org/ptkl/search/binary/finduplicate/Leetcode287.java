@@ -3,7 +3,7 @@ package org.ptkl.search.binary.finduplicate;
 /**
  * leetcode 287 寻找重复数
  */
-public class Solution {
+public class Leetcode287 {
 
     public int findDuplicate(int[] nums) {
         int n = nums.length;

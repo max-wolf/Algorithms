@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 
 class BSTIteratorTest {
 
-    private static final Logger logger = LoggerFactory.getLogger(BSTIterator.class);
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     TreeNode root = null;
 

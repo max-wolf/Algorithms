@@ -6,7 +6,7 @@ import java.util.Map;
 /*
 * leetcode 454.四数相加II
 * */
-public class Solution {
+public class Leetcode454 {
     public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
         Map<Integer, Integer> map = new HashMap<>();
         int len = A.length;
